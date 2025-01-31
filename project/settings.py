@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #installed apps
-    'rest-framework',
+    'rest_framework',
     # My Apps
     'filmverwaltungAPI',
 ]
