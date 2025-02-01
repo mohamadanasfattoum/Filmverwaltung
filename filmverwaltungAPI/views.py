@@ -14,6 +14,15 @@ class DirectorAPIViews(generics.ListCreateAPIView):
     serializer_class = DirectorListSerializers
 
 
+class FilmRetrieveAPIViews(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Film.objects.all()
+    serializer_class = FilmSerializers
+
+
+class DirectorRetrieveAPIViews(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Director.objects.all()
+    serializer_class = DirectorListSerializers
+
 
 
 
